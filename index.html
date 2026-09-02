@@ -1,11 +1,328 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Uzum Market</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+
+            <a href="#" class="logo">Uzum</a>
+
+            <button class="catalog-btn">
+                ☰ Katalog
+            </button>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Mahsulot qidiring"
+                >
+                <button id="searchBtn">🔍</button>
+            </div>
+
+            <div class="header-actions">
+                <button>👤 Kirish</button>
+                <button>❤️ Sevimlilar</button>
+                <button id="cartButton">🛒 Savat <span id="cartCount">0</span></button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#">Elektronika</a>
+            <a href="#">Kiyim</a>
+            <a href="#">Uy uchun</a>
+            <a href="#">Go‘zallik</a>
+            <a href="#">Bolalar uchun</a>
+            <a href="#">Oziq-ovqat</a>
+            <a href="#">Sport</a>
+            <a href="#">Aksiyalar 🔥</a>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Uyingiz uchun<br>hamma narsa</h1>
+                <p>Qulay narxlar va katta tanlov</p>
+
+                <button class="banner-btn">
+                    Xarid qilish
+                </button>
+            </div>
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="section">
+            <h2>Kategoriyalar</h2>
+
+            <div class="categories">
+
+                <div class="category">
+                    <div class="category-icon">📱</div>
+                    <p>Elektronika</p>
+                </div>
+
+                <div class="category">
+                    <div class="category-icon">👕</div>
+                    <p>Kiyim</p>
+                </div>
+
+                <div class="category">
+                    <div class="category-icon">🏠</div>
+                    <p>Uy uchun</p>
+                </div>
+
+                <div class="category">
+                    <div class="category-icon">💄</div>
+                    <p>Go‘zallik</p>
+                </div>
+
+                <div class="category">
+                    <div class="category-icon">🎮</div>
+                    <p>O‘yinlar</p>
+                </div>
+
+                <div class="category">
+                    <div class="category-icon">⚽</div>
+                    <p>Sport</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRODUCTS -->
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Mashhur mahsulotlar</h2>
+                <a href="#">Barchasini ko‘rish →</a>
+            </div>
+
+            <div class="products" id="products">
+
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card" data-name="Smartfon Samsung">
+
+                    <div class="product-image">
+                        📱
+                        <span class="discount">-20%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.8</div>
+
+                        <h3>Smartfon Samsung Galaxy</h3>
+
+                        <p class="old-price">4 500 000 so‘m</p>
+
+                        <p class="price">3 600 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Smartfon Samsung Galaxy">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card" data-name="Simsiz quloqchin">
+
+                    <div class="product-image">
+                        🎧
+                        <span class="discount">-15%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.7</div>
+
+                        <h3>Simsiz quloqchin</h3>
+
+                        <p class="old-price">350 000 so‘m</p>
+
+                        <p class="price">297 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Simsiz quloqchin">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card" data-name="Sport krossovka">
+
+                    <div class="product-image">
+                        👟
+                        <span class="discount">-30%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.9</div>
+
+                        <h3>Sport krossovka</h3>
+
+                        <p class="old-price">700 000 so‘m</p>
+
+                        <p class="price">490 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Sport krossovka">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card" data-name="Smart soat">
+
+                    <div class="product-image">
+                        ⌚
+                        <span class="discount">-25%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.6</div>
+
+                        <h3>Smart Watch</h3>
+
+                        <p class="old-price">600 000 so‘m</p>
+
+                        <p class="price">450 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Smart Watch">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+                <article class="product-card" data-name="Noutbuk">
+
+                    <div class="product-image">
+                        💻
+                        <span class="discount">-10%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.9</div>
+
+                        <h3>Noutbuk</h3>
+
+                        <p class="old-price">8 000 000 so‘m</p>
+
+                        <p class="price">7 200 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Noutbuk">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+                <article class="product-card" data-name="Ryukzak">
+
+                    <div class="product-image">
+                        🎒
+                        <span class="discount">-18%</span>
+                        <button class="favorite">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="rating">⭐ 4.5</div>
+
+                        <h3>Maktab uchun ryukzak</h3>
+
+                        <p class="old-price">300 000 so‘m</p>
+
+                        <p class="price">246 000 so‘m</p>
+
+                        <button
+                            class="add-cart"
+                            data-product="Maktab uchun ryukzak">
+                            Savatga qo‘shish
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CART -->
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+            <h2>Savat</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Savatingiz hozircha bo‘sh.</p>
+        </div>
+
+        <div class="cart-footer">
+            <strong>Mahsulotlar: <span id="cartTotal">0</span></strong>
+
+            <button class="checkout">
+                Buyurtma berish
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
 </html>
+```
